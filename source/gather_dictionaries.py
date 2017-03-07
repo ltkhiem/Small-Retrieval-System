@@ -1,8 +1,8 @@
 import os;
 import system_io;
 
-documentDir = "../docs/";
-dictionaryDir = "../dictionary/"
+documentDir = "../training/documents/";
+dictionaryDir = "../training/"
 myDictionary = set();
 
 #Get data from documents and build dictionary
@@ -18,7 +18,7 @@ def CreateDictionary():
 	myDictionary = sorted(myDictionary)
 	system_io.WriteToFile(dictionaryDir+"dictionary.txt", myDictionary);
 
-#Call CreateDictionary() to test for creating new dictionary from documents at "source code/docs/"
-#The result is stored at "source code/dictionary/"
+#Call CreateDictionary() to test for creating new dictionary from documents at "source code/training/documents/"
+#The result is stored at "source code/training/"
 
 #CreateDictionary()

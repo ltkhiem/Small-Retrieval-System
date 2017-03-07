@@ -3,8 +3,8 @@ import system_io;
 from collections import defaultdict
 import gather_dictionaries
 
-documentDir = "../docs/";
-dictionaryDir = "../dictionary/"
+documentDir = "../training/documents/";
+dictionaryDir = "../training/"
 myDictionary = defaultdict(list)
 
 def LoadDictionary(dictionary):
@@ -29,4 +29,4 @@ def Test():
 		print(myDictionary[word])
 
 #Call for Test() to test the building inverted index process
-#Test()
+Test()
